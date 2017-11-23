@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-      <h2>Formulario de Registro</h2> 
       <div class="filed">
           <label for="" class="label">Nombre</label>
           <div class="control">

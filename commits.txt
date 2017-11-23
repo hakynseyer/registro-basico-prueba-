@@ -1,0 +1,11 @@
+commit ac2a25aab2cd4eab7177d3fbaaaa68032541fa8b
+Author: Hakyn Seyer <joaquin.seyer21@gmail.com>
+Date:   Thu Nov 23 09:50:30 2017 -0600
+
+    Se Agregó otro input al formurario registro
+
+commit 027a34ce32535bbca57503dd4c3246a7080f3ae0
+Author: Hakyn Seyer <joaquin.seyer21@gmail.com>
+Date:   Thu Nov 23 09:47:43 2017 -0600
+
+    Agregado un titulo H2
