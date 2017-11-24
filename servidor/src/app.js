@@ -3,11 +3,16 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cors = require('cors')
 
+const config = require('./config/config')
+const {BaseDatos} = require('./modelos')
+
 const app = express()
 
-app.use(morgan('combine'))
+app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-
-app.listen(process.env.PORT || 8081)
+BaseDatos.sync().then(() => {
+  app.listen(config.puertoServidor)
+  console.log(`Servidor corriendo en el puerto ${config.puertoServidor}`)
+})
