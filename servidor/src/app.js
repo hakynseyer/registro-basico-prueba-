@@ -12,6 +12,8 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
+require('./rutas')(app)
+
 BaseDatos.sync().then(() => {
   app.listen(config.puertoServidor)
   console.log(`Servidor corriendo en el puerto ${config.puertoServidor}`)
